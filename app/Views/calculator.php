@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Calculator!</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('css/style.css');?>" />
+	<?php echo view('header');?>
 </head>
 <body>
 	<h1>This is the representation of calculator with html and Css Code</h1>
@@ -80,6 +80,6 @@
 		</div>		
 		<hr>
 	</div>
-
+<?php echo view('footer');?>
 </body>
 </html>
