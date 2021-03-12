@@ -5,80 +5,33 @@
 	<?php echo view('header');?>
 </head>
 <body>
-	<h1>This is the representation of calculator with html and Css Code</h1>
-	<div class="container">
-		<div class="display">
-			<h4>Can you see this output?</h4>
+	<h1>Functional calculator with HTML, CSS and Javascript Languages!</h1>
+	<div class="calculator-grid">
+		<div class="output">
+			<div data-previous-operand class="previous-operand"></div>
+			<div data-current-operand class="current-operand"></div>
 		</div>
-		<div class="display x-button big1">
-			<h4>X</h4>
-		</div>
-		<div class="display x-button big1 big2">
-			<h4>-</h4>
-		</div>
-		<div class="display x-button big1 big2">
-			<h4>/</h4>
-		</div>
-		<div class="next2">
-			<div class="display x-button num-box">
-				<h4>1</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>2</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>3</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>4</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>%</h4>
-			</div>
-		</div>
-		<div class="next2">
-			<div class="display x-button num-box">
-				<h4>5</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>6</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>7</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>8</h4>
-			</div>
-			<div class="display x-button num-box equal">
-				<h4>+</h4>
-			</div>
-		</div>
-		<div class="next2">
-			<div class="display x-button num-box">
-				<h4>9</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4><</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>></h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>.</h4>
-			</div>
-		</div>
-		<div class="next2">
-			<div class="display x-button num-box big1">
-				<h4>00.0</h4>
-			</div>
-			<div class="display x-button num-box">
-				<h4>0</h4>
-			</div>
-			<div class="display x-button num-box big1">
-				<h4>=</h4>
-			</div>
-		</div>		
-		<hr>
+	<!-- sub buttons	 -->
+		<button data-all-clear class="span-two">AC</button>
+		<button data-delete>DEL</button>
+		<button data-operation>÷</button>
+		<button data-number>1</button>
+		<button data-number>2</button>
+		<button data-number>3</button>
+		<button data-operation>*</button>
+		<button data-number>4</button>
+		<button data-number>5</button>
+		<button data-number>6</button>
+		<button data-operation>+</button>
+		<button data-number>7</button>
+		<button data-number>8</button>
+		<button data-number>9</button>
+		<button data-operation>-</button>
+		<button data-number>.</button>
+		<button data-number>0</button>
+		<button data-equals class="span-two">=</button>
+
+
 	</div>
 <?php echo view('footer');?>
 </body>

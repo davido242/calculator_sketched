@@ -1,83 +1,65 @@
-*{
-	margin: 0;
+*, *::before, *::after{
 	box-sizing: border-box;
+	font-family: gotham rounded, sans-serif;
+	font-weight: normal;
 }
 body{
-	background: navy;
-	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	background: linear-gradient(to right, #12bed6, #14f772);
 	color: #fff;
+	
 }
 h1{
 	text-align: center;
-	margin-top: 40px;
+	color: #000;
 }
-.container{
-	background: grey;
-	width: 35%;
-	margin: 100px 30% 0 30%;
-	border-top-right-radius: 50px;
-	border-top-left-radius: 50px;
-
+.calculator-grid{
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 100px);
+	grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
-.display{
-	background: #000;
-	width: 100%;
-	line-height: 70px;
-	text-align: right;
-	font-size: 2.5em;
-	color: red;
-	padding: 0px 20px 0 0px;
-	border-top-right-radius: 50px;
-	border-top-left-radius: 50px;
-	text-decoration: line-through;
-}
-.x-button:hover {
-	background: #000;
-	font-size: 2em;
+.calculator-grid > button{
 	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid #fff;
+	outline: none;
+	background: rgb(255, 255, 255, .75);
 }
-.big1 {
-	width: 20% !important;
-	padding: 0 8% 0px 0px;
+.calculator-grid > button:hover{
+	background: rgb(255, 255, 255, .9);
 }
-.big2 {
-	width: 10% !important;
-	padding: 0 4% 0px 0px;
+.span-two{
+	grid-column: span 2;
 }
-.x-button{
-	background: red;
-	width: 10%;
-	color: #fff;
-	font-size: 3em;
-	border-top-right-radius: 0px;
-	border-top-left-radius: 0px;
-	display: inline-block;
-	margin: 10px 10px;
-	text-decoration: none;
+.output{
+	grid-column: 1 / -1;
+	display: flex;
+	align-items: flex-end;
+	background: rgba(0,0,0, .75);
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+	word-wrap: break-word;
+	word-break: break-all;
 }
-.num-box{
-	margin: 0 3px;
+.output .previous-operand{
+	color: rgba(255, 255, 255, .75);
+	font-size: 1.5rem;	
+	}
+.output .current-operand{
+		color: #fff;
+		font-size: 2.5rem;
+	}
 
-}
-.next2{
-	display: block;
-	margin: 10px 10px;
-}
-.equal{
-	line-height: 150px;
-	font-size: 5.5em;
-	width: 4%;
-	position: absolute;
-	padding: 0 1% 0px 0px;
-}
-hr{
-	outline-color: red;
-	border: 5px solid red;
-}
+
 .footer{
 	width: 100%;
 	line-height: 5rem;
-	margin: 3vh 0px 0px 0px;
+	margin: 8vh 0px 0px 0px;
 	background: #000;
 	text-align: center;
 }
